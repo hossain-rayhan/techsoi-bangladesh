@@ -1,0 +1,33 @@
+{
+  "id": "education-inequality",
+  "title": "Education Quality Gap Between Urban and Rural",
+  "category": "Education",
+  "status": "Open",
+  "impact": "30+ million students",
+  "summary": "Significant disparity exists in education quality between urban and rural schools, perpetuating cycles of poverty and limiting opportunities.",
+  "currentSituation": "Rural schools face teacher shortages, lack of qualified instructors, inadequate learning materials, and poor infrastructure. Urban students have access to better schools, private tutoring, and digital resources. This gap widens with each grade level.",
+  "affectedGroups": [
+    "Rural students at all levels",
+    "Students from low-income families",
+    "Girls in conservative areas",
+    "Students with disabilities"
+  ],
+  "consequences": [
+    "Lower pass rates in national examinations",
+    "Limited higher education opportunities",
+    "Reduced employment prospects",
+    "Brain drain from rural to urban areas"
+  ],
+  "potentialTechInterventions": [
+    "Free online learning platforms in Bangla",
+    "Virtual classroom solutions",
+    "Teacher training and support apps",
+    "Digital assessment and feedback systems"
+  ],
+  "relatedResources": [
+    "BANBEIS Education Statistics",
+    "UNESCO Bangladesh Education Report"
+  ],
+  "createdAt": "2026-01-10",
+  "updatedAt": "2026-01-28"
+}

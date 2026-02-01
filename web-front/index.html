@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSoi Bangladesh - টেকসই বাংলাদেশ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🇧🇩</span>
+                <div class="logo-text">
+                    <h1>TechSoi Bangladesh</h1>
+                    <span class="logo-bengali">টেকসই বাংলাদেশ</span>
+                </div>
+            </div>
+            <div class="motto">
+                <p class="tagline">Technology for a Better Bangladesh</p>
+                <p class="initiative">A Probasi Bangladesh Foundation Initiative</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Building a Corruption-Free Bangladesh Through Technology</h2>
+            <p>A collective of passionate Bangladeshi professionals — engineers, professors, and researchers — united to solve national challenges.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="proposal-count">0</span>
+                    <span class="stat-label">Proposals</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="issue-count">0</span>
+                    <span class="stat-label">Issues</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Contributors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="proposals">
+                    <span class="tab-icon">💡</span>
+                    <span class="tab-text">Proposals</span>
+                </button>
+                <button class="tab-btn" data-tab="issues">
+                    <span class="tab-icon">📋</span>
+                    <span class="tab-text">Issues</span>
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Proposals Tab -->
+                <div class="tab-pane active" id="proposals">
+                    <div class="tab-header">
+                        <h3>Project Proposals</h3>
+                        <p>Technology solutions aimed at solving national problems</p>
+                    </div>
+                    <div class="cards-grid" id="proposals-grid">
+                        <!-- Proposals will be loaded here dynamically -->
+                        <div class="loading">Loading proposals...</div>
+                    </div>
+                </div>
+
+                <!-- Issues Tab -->
+                <div class="tab-pane" id="issues">
+                    <div class="tab-header">
+                        <h3>Issues & Problem Statements</h3>
+                        <p>Documented challenges facing Bangladesh that need technology solutions</p>
+                    </div>
+                    <div class="cards-grid" id="issues-grid">
+                        <!-- Issues will be loaded here dynamically -->
+                        <div class="loading">Loading issues...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h3>Ready to Make a Difference?</h3>
+            <p>Join us in building technology solutions for Bangladesh's most pressing challenges.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/your-repo/techsoi-bangladesh" class="btn btn-primary" target="_blank">
+                    <span>📝</span> Submit a Proposal
+                </a>
+                <a href="https://github.com/your-repo/techsoi-bangladesh" class="btn btn-secondary" target="_blank">
+                    <span>🐛</span> Report an Issue
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🇧🇩</span>
+                    <span>TechSoi Bangladesh</span>
+                </div>
+                <p class="footer-text">
+                    Made with ❤️ by Bangladeshi professionals worldwide
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/your-repo/techsoi-bangladesh" target="_blank">GitHub</a>
+                    <span>•</span>
+                    <a href="#">Contribute</a>
+                    <span>•</span>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 TechSoi Bangladesh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

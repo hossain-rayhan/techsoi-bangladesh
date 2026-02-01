@@ -1,0 +1,34 @@
+{
+  "id": "public-service-corruption",
+  "title": "Corruption in Public Services",
+  "category": "Corruption",
+  "status": "Open",
+  "impact": "All citizens",
+  "summary": "Citizens face bribery demands when accessing basic public services like getting documents, permits, or utilities connected.",
+  "currentSituation": "According to surveys, over 60% of citizens report paying bribes for public services. Common areas include passport offices, land offices, utility connections, and law enforcement. Average households spend significant amounts on unofficial payments annually.",
+  "affectedGroups": [
+    "All citizens requiring government services",
+    "Businesses seeking permits and licenses",
+    "Low-income families (disproportionately affected)",
+    "Foreign investors"
+  ],
+  "consequences": [
+    "Increased cost of living for ordinary citizens",
+    "Discouragement of business and investment",
+    "Erosion of public trust in institutions",
+    "Perpetuation of inequality"
+  ],
+  "potentialTechInterventions": [
+    "Digital service delivery portals",
+    "Online tracking of application status",
+    "Anonymous corruption reporting platforms",
+    "Automated approval systems to reduce discretion",
+    "Blockchain-based document verification"
+  ],
+  "relatedResources": [
+    "Transparency International Bangladesh CPI",
+    "World Bank Governance Indicators"
+  ],
+  "createdAt": "2026-01-03",
+  "updatedAt": "2026-01-20"
+}

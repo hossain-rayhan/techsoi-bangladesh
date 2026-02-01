@@ -1,0 +1,58 @@
+{
+  "id": "education-platform",
+  "title": "Open Education Platform for Bangladesh",
+  "category": "Education",
+  "status": "New",
+  "author": "EdTech Volunteers",
+  "summary": "A free, open-source educational platform with curriculum-aligned content in Bangla, supporting students from primary to higher secondary levels.",
+  "problemStatement": "Quality education remains inaccessible to millions due to economic constraints, geographic barriers, and shortage of qualified teachers. Private tutoring creates inequality.",
+  "proposedSolution": "Create a Khan Academy-style platform in Bangla with video lessons, interactive exercises, and progress tracking aligned with the national curriculum.",
+  "technicalArchitecture": [
+    "Frontend: Next.js with offline support",
+    "Backend: Python FastAPI",
+    "Content: Video hosting on cost-effective CDN",
+    "Database: MongoDB for flexible content structure",
+    "Mobile: Progressive Web App (PWA)"
+  ],
+  "implementationPhases": [
+    {
+      "phase": "Phase 1",
+      "description": "SSC curriculum content and platform",
+      "timeline": "6 months"
+    },
+    {
+      "phase": "Phase 2",
+      "description": "HSC curriculum and mobile app",
+      "timeline": "12 months"
+    },
+    {
+      "phase": "Phase 3",
+      "description": "Primary education and teacher tools",
+      "timeline": "18 months"
+    }
+  ],
+  "budgetEstimate": "Development: ৳15 crore, Annual content: ৳8 crore",
+  "expectedImpact": [
+    "Free quality education for 10+ million students",
+    "Reduce dependency on private tutoring",
+    "Standardize education quality across regions"
+  ],
+  "teamRequirements": [
+    "Full-stack developers (8)",
+    "Content creators and teachers (20+)",
+    "Video production team (5)",
+    "Curriculum experts (5)"
+  ],
+  "risks": [
+    {
+      "risk": "Content quality consistency",
+      "mitigation": "Peer review system and expert validation"
+    },
+    {
+      "risk": "Device accessibility",
+      "mitigation": "Low-spec device optimization, school computer labs"
+    }
+  ],
+  "createdAt": "2026-01-20",
+  "updatedAt": "2026-01-30"
+}

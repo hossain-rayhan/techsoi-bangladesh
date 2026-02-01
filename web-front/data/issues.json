@@ -1,0 +1,171 @@
+{
+  "issues": [
+    {
+      "id": "land-disputes",
+      "title": "Rampant Land Disputes and Fraud",
+      "category": "Corruption",
+      "status": "Open",
+      "impact": "Millions",
+      "summary": "Land-related disputes constitute over 70% of civil cases in Bangladesh courts, with fraudulent documents and multiple claims causing widespread injustice.",
+      "currentSituation": "Bangladesh lacks a comprehensive digital land registry. Paper-based records are susceptible to forgery, and the process of verifying land ownership is time-consuming, expensive, and prone to corruption. An estimated 4 million land-related cases are pending in courts.",
+      "affectedGroups": [
+        "Rural landowners",
+        "Urban property buyers",
+        "Agricultural farmers",
+        "Low-income families vulnerable to land grabbing"
+      ],
+      "consequences": [
+        "Billions of taka lost in legal fees annually",
+        "Violence and deaths over land disputes",
+        "Delayed economic development projects",
+        "Erosion of trust in legal system"
+      ],
+      "potentialTechInterventions": [
+        "Blockchain-based land registry",
+        "Digital document verification system",
+        "Online dispute resolution platform",
+        "Mobile app for land record verification"
+      ],
+      "relatedResources": [
+        "World Bank Report on Land Administration in Bangladesh",
+        "Transparency International Bangladesh Land Governance Study"
+      ],
+      "createdAt": "2026-01-08",
+      "updatedAt": "2026-01-25"
+    },
+    {
+      "id": "healthcare-access",
+      "title": "Limited Healthcare Access in Rural Areas",
+      "category": "Healthcare",
+      "status": "Open",
+      "impact": "100+ million",
+      "summary": "The majority of Bangladesh's population lacks access to quality healthcare due to shortage of doctors, inadequate facilities, and geographic barriers.",
+      "currentSituation": "Bangladesh has approximately 1 doctor per 2,000 people, well below WHO recommendations. Specialist doctors are concentrated in Dhaka and major cities. Rural health centers often lack basic equipment and qualified staff. Patients travel hours to reach quality care.",
+      "affectedGroups": [
+        "Rural population (70% of total)",
+        "Low-income families",
+        "Women and children",
+        "Elderly citizens"
+      ],
+      "consequences": [
+        "High maternal and infant mortality rates",
+        "Preventable deaths from treatable diseases",
+        "Financial burden from travel and treatment costs",
+        "Delayed diagnosis of serious conditions"
+      ],
+      "potentialTechInterventions": [
+        "Telemedicine platforms for remote consultations",
+        "AI-assisted diagnostic tools",
+        "Health worker mobile apps for community health",
+        "Medicine delivery and inventory management systems"
+      ],
+      "relatedResources": [
+        "WHO Bangladesh Health Profile",
+        "Ministry of Health Digital Health Strategy"
+      ],
+      "createdAt": "2026-01-05",
+      "updatedAt": "2026-01-22"
+    },
+    {
+      "id": "education-inequality",
+      "title": "Education Quality Gap Between Urban and Rural",
+      "category": "Education",
+      "status": "Open",
+      "impact": "30+ million students",
+      "summary": "Significant disparity exists in education quality between urban and rural schools, perpetuating cycles of poverty and limiting opportunities.",
+      "currentSituation": "Rural schools face teacher shortages, lack of qualified instructors, inadequate learning materials, and poor infrastructure. Urban students have access to better schools, private tutoring, and digital resources. This gap widens with each grade level.",
+      "affectedGroups": [
+        "Rural students at all levels",
+        "Students from low-income families",
+        "Girls in conservative areas",
+        "Students with disabilities"
+      ],
+      "consequences": [
+        "Lower pass rates in national examinations",
+        "Limited higher education opportunities",
+        "Reduced employment prospects",
+        "Brain drain from rural to urban areas"
+      ],
+      "potentialTechInterventions": [
+        "Free online learning platforms in Bangla",
+        "Virtual classroom solutions",
+        "Teacher training and support apps",
+        "Digital assessment and feedback systems"
+      ],
+      "relatedResources": [
+        "BANBEIS Education Statistics",
+        "UNESCO Bangladesh Education Report"
+      ],
+      "createdAt": "2026-01-10",
+      "updatedAt": "2026-01-28"
+    },
+    {
+      "id": "traffic-congestion",
+      "title": "Severe Traffic Congestion in Dhaka",
+      "category": "Infrastructure",
+      "status": "Open",
+      "impact": "20+ million",
+      "summary": "Dhaka is one of the world's most congested cities, with traffic jams causing massive economic losses and reduced quality of life.",
+      "currentSituation": "Average traffic speed in Dhaka has dropped to 7 km/hour during peak times. Citizens spend 3-4 hours daily in traffic. Economic losses estimated at ৳37,000 crore annually. Lack of integrated public transport, poor traffic management, and rapid urbanization compound the problem.",
+      "affectedGroups": [
+        "Daily commuters",
+        "Business owners",
+        "Emergency services",
+        "All Dhaka residents"
+      ],
+      "consequences": [
+        "Lost productivity worth billions annually",
+        "Increased air pollution and health issues",
+        "Delayed emergency response times",
+        "Mental health impact and stress"
+      ],
+      "potentialTechInterventions": [
+        "Smart traffic management systems",
+        "Real-time traffic information apps",
+        "Integrated public transport ticketing",
+        "Ride-sharing optimization platforms",
+        "Data-driven urban planning tools"
+      ],
+      "relatedResources": [
+        "World Bank Dhaka Urban Transport Study",
+        "BUET Traffic Research Reports"
+      ],
+      "createdAt": "2026-01-12",
+      "updatedAt": "2026-01-26"
+    },
+    {
+      "id": "public-service-corruption",
+      "title": "Corruption in Public Services",
+      "category": "Corruption",
+      "status": "Open",
+      "impact": "All citizens",
+      "summary": "Citizens face bribery demands when accessing basic public services like getting documents, permits, or utilities connected.",
+      "currentSituation": "According to surveys, over 60% of citizens report paying bribes for public services. Common areas include passport offices, land offices, utility connections, and law enforcement. Average households spend significant amounts on unofficial payments annually.",
+      "affectedGroups": [
+        "All citizens requiring government services",
+        "Businesses seeking permits and licenses",
+        "Low-income families (disproportionately affected)",
+        "Foreign investors"
+      ],
+      "consequences": [
+        "Increased cost of living for ordinary citizens",
+        "Discouragement of business and investment",
+        "Erosion of public trust in institutions",
+        "Perpetuation of inequality"
+      ],
+      "potentialTechInterventions": [
+        "Digital service delivery portals",
+        "Online tracking of application status",
+        "Anonymous corruption reporting platforms",
+        "Automated approval systems to reduce discretion",
+        "Blockchain-based document verification"
+      ],
+      "relatedResources": [
+        "Transparency International Bangladesh CPI",
+        "World Bank Governance Indicators"
+      ],
+      "createdAt": "2026-01-03",
+      "updatedAt": "2026-01-20"
+    }
+  ]
+}
