@@ -1,0 +1,58 @@
+{
+  "id": "healthcare-accessibility",
+  "title": "Telemedicine for Rural Bangladesh",
+  "category": "Healthcare",
+  "status": "Pending",
+  "author": "Digital Health Initiative",
+  "summary": "A comprehensive telemedicine platform connecting rural patients with specialist doctors, including AI-assisted diagnosis and medicine delivery integration.",
+  "problemStatement": "Over 70% of Bangladesh's population lives in rural areas with limited access to quality healthcare. There is only 1 doctor per 2,000 people, and specialist care is concentrated in urban centers.",
+  "proposedSolution": "Develop a telemedicine platform with video consultations, AI symptom checker, electronic prescriptions, and integration with local pharmacies for medicine delivery to rural areas.",
+  "technicalArchitecture": [
+    "Mobile App: React Native for cross-platform",
+    "Backend: Node.js microservices architecture",
+    "AI: TensorFlow for symptom analysis",
+    "Video: WebRTC for real-time consultations",
+    "Integration: APIs for pharmacy networks"
+  ],
+  "implementationPhases": [
+    {
+      "phase": "Phase 1",
+      "description": "Platform development and pilot in 2 upazilas",
+      "timeline": "6 months"
+    },
+    {
+      "phase": "Phase 2",
+      "description": "Expand to 20 upazilas with pharmacy integration",
+      "timeline": "12 months"
+    },
+    {
+      "phase": "Phase 3",
+      "description": "Nationwide coverage with AI features",
+      "timeline": "24 months"
+    }
+  ],
+  "budgetEstimate": "Development: ৳25 crore, Annual operation: ৳10 crore",
+  "expectedImpact": [
+    "Provide healthcare access to 50+ million rural citizens",
+    "Reduce unnecessary hospital visits by 40%",
+    "Early detection of diseases through AI screening"
+  ],
+  "teamRequirements": [
+    "Mobile developers (6)",
+    "AI/ML engineers (4)",
+    "Healthcare domain experts (3)",
+    "Community health workers for outreach (100+)"
+  ],
+  "risks": [
+    {
+      "risk": "Internet connectivity in rural areas",
+      "mitigation": "Offline-capable features, low-bandwidth optimization"
+    },
+    {
+      "risk": "Doctor participation",
+      "mitigation": "Incentive programs and flexible scheduling"
+    }
+  ],
+  "createdAt": "2026-01-05",
+  "updatedAt": "2026-01-20"
+}

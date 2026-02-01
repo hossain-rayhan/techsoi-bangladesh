@@ -1,0 +1,41 @@
+{
+  "totalCount": 5,
+  "perPage": 12,
+  "issues": [
+    {
+      "id": "land-disputes",
+      "title": "Rampant Land Disputes and Fraud",
+      "category": "Corruption",
+      "status": "Open",
+      "summary": "Land-related disputes constitute over 70% of civil cases in Bangladesh courts, with fraudulent documents and multiple claims causing widespread injustice."
+    },
+    {
+      "id": "healthcare-access",
+      "title": "Limited Healthcare Access in Rural Areas",
+      "category": "Healthcare",
+      "status": "Open",
+      "summary": "The majority of Bangladesh's population lacks access to quality healthcare due to shortage of doctors, inadequate facilities, and geographic barriers."
+    },
+    {
+      "id": "education-inequality",
+      "title": "Education Quality Gap Between Urban and Rural",
+      "category": "Education",
+      "status": "Open",
+      "summary": "Significant disparity exists in education quality between urban and rural schools, perpetuating cycles of poverty and limiting opportunities."
+    },
+    {
+      "id": "traffic-congestion",
+      "title": "Severe Traffic Congestion in Dhaka",
+      "category": "Infrastructure",
+      "status": "Open",
+      "summary": "Dhaka is one of the world's most congested cities, with traffic jams causing massive economic losses and reduced quality of life."
+    },
+    {
+      "id": "public-service-corruption",
+      "title": "Corruption in Public Services",
+      "category": "Corruption",
+      "status": "Open",
+      "summary": "Citizens face bribery demands when accessing basic public services like getting documents, permits, or utilities connected."
+    }
+  ]
+}

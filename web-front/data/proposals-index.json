@@ -1,0 +1,34 @@
+{
+  "totalCount": 4,
+  "perPage": 12,
+  "proposals": [
+    {
+      "id": "digital-land-registry",
+      "title": "Digital Land Registry System",
+      "category": "Governance",
+      "status": "Under Review",
+      "summary": "A blockchain-based land registry system to eliminate fraudulent land transactions and provide transparent ownership records across Bangladesh."
+    },
+    {
+      "id": "transparent-procurement",
+      "title": "Transparent Public Procurement Platform",
+      "category": "Governance",
+      "status": "Active",
+      "summary": "An open-source e-procurement system that ensures transparency in government purchases, from tender announcement to contract completion."
+    },
+    {
+      "id": "healthcare-accessibility",
+      "title": "Telemedicine for Rural Bangladesh",
+      "category": "Healthcare",
+      "status": "Pending",
+      "summary": "A comprehensive telemedicine platform connecting rural patients with specialist doctors, including AI-assisted diagnosis and medicine delivery integration."
+    },
+    {
+      "id": "education-platform",
+      "title": "Open Education Platform for Bangladesh",
+      "category": "Education",
+      "status": "New",
+      "summary": "A free, open-source educational platform with curriculum-aligned content in Bangla, supporting students from primary to higher secondary levels."
+    }
+  ]
+}

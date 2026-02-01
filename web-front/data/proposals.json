@@ -1,0 +1,238 @@
+{
+  "proposals": [
+    {
+      "id": "digital-land-registry",
+      "title": "Digital Land Registry System",
+      "category": "Governance",
+      "status": "Under Review",
+      "author": "Tech Community",
+      "summary": "A blockchain-based land registry system to eliminate fraudulent land transactions and provide transparent ownership records across Bangladesh.",
+      "problemStatement": "Land disputes account for over 70% of civil litigation in Bangladesh. Fraudulent documents, multiple ownership claims, and lack of digitized records lead to corruption, violence, and economic losses estimated at billions of taka annually.",
+      "proposedSolution": "Implement a blockchain-based digital land registry that provides immutable records of land ownership, transaction history, and automated verification. The system will integrate with existing government databases and provide public access to verified land records.",
+      "technicalArchitecture": [
+        "Blockchain: Hyperledger Fabric for permissioned ledger",
+        "Backend: Node.js with Express.js",
+        "Frontend: React.js with mobile-responsive design",
+        "Database: PostgreSQL for off-chain data",
+        "Integration: APIs for government systems"
+      ],
+      "implementationPhases": [
+        {
+          "phase": "Phase 1",
+          "description": "Pilot in one district with digitization of existing records",
+          "timeline": "6 months"
+        },
+        {
+          "phase": "Phase 2",
+          "description": "Expand to 5 major districts with public portal",
+          "timeline": "12 months"
+        },
+        {
+          "phase": "Phase 3",
+          "description": "Nationwide rollout with mobile app",
+          "timeline": "24 months"
+        }
+      ],
+      "budgetEstimate": "Initial pilot: ৳50 crore, Full implementation: ৳500 crore",
+      "expectedImpact": [
+        "Reduce land-related litigation by 60%",
+        "Eliminate fraudulent land documents",
+        "Save citizens billions in legal fees",
+        "Increase property tax collection efficiency"
+      ],
+      "teamRequirements": [
+        "Blockchain developers (5)",
+        "Full-stack developers (10)",
+        "UI/UX designers (3)",
+        "Legal experts (2)",
+        "Project managers (2)"
+      ],
+      "risks": [
+        {
+          "risk": "Resistance from vested interests",
+          "mitigation": "Phased rollout with stakeholder engagement"
+        },
+        {
+          "risk": "Data migration challenges",
+          "mitigation": "Dedicated data validation team"
+        }
+      ],
+      "createdAt": "2026-01-15",
+      "updatedAt": "2026-01-28"
+    },
+    {
+      "id": "transparent-procurement",
+      "title": "Transparent Public Procurement Platform",
+      "category": "Governance",
+      "status": "Active",
+      "author": "Anti-Corruption Coalition",
+      "summary": "An open-source e-procurement system that ensures transparency in government purchases, from tender announcement to contract completion.",
+      "problemStatement": "Public procurement in Bangladesh is plagued by corruption, bid rigging, and lack of transparency. Studies estimate that 10-25% of procurement budgets are lost to corruption annually.",
+      "proposedSolution": "Create an end-to-end digital procurement platform that automates the entire procurement lifecycle with built-in transparency mechanisms, audit trails, and public oversight features.",
+      "technicalArchitecture": [
+        "Backend: Python Django with REST APIs",
+        "Frontend: Vue.js with accessibility features",
+        "Database: PostgreSQL with audit logging",
+        "Security: Multi-factor authentication, encryption",
+        "Analytics: Real-time dashboards and alerts"
+      ],
+      "implementationPhases": [
+        {
+          "phase": "Phase 1",
+          "description": "Core platform development and pilot ministry",
+          "timeline": "8 months"
+        },
+        {
+          "phase": "Phase 2",
+          "description": "Rollout to 10 ministries with training",
+          "timeline": "18 months"
+        },
+        {
+          "phase": "Phase 3",
+          "description": "All government bodies and local governments",
+          "timeline": "36 months"
+        }
+      ],
+      "budgetEstimate": "Development: ৳30 crore, Annual operation: ৳5 crore",
+      "expectedImpact": [
+        "Save ৳5,000+ crore annually from reduced corruption",
+        "Increase SME participation in government contracts",
+        "Improve public trust in government spending"
+      ],
+      "teamRequirements": [
+        "Python developers (8)",
+        "Security specialists (3)",
+        "Domain experts in procurement (2)",
+        "Training coordinators (5)"
+      ],
+      "risks": [
+        {
+          "risk": "User adoption challenges",
+          "mitigation": "Comprehensive training and support"
+        },
+        {
+          "risk": "Integration with legacy systems",
+          "mitigation": "Flexible API architecture"
+        }
+      ],
+      "createdAt": "2026-01-10",
+      "updatedAt": "2026-01-25"
+    },
+    {
+      "id": "healthcare-accessibility",
+      "title": "Telemedicine for Rural Bangladesh",
+      "category": "Healthcare",
+      "status": "Pending",
+      "author": "Digital Health Initiative",
+      "summary": "A comprehensive telemedicine platform connecting rural patients with specialist doctors, including AI-assisted diagnosis and medicine delivery integration.",
+      "problemStatement": "Over 70% of Bangladesh's population lives in rural areas with limited access to quality healthcare. There is only 1 doctor per 2,000 people, and specialist care is concentrated in urban centers.",
+      "proposedSolution": "Develop a telemedicine platform with video consultations, AI symptom checker, electronic prescriptions, and integration with local pharmacies for medicine delivery to rural areas.",
+      "technicalArchitecture": [
+        "Mobile App: React Native for cross-platform",
+        "Backend: Node.js microservices architecture",
+        "AI: TensorFlow for symptom analysis",
+        "Video: WebRTC for real-time consultations",
+        "Integration: APIs for pharmacy networks"
+      ],
+      "implementationPhases": [
+        {
+          "phase": "Phase 1",
+          "description": "Platform development and pilot in 2 upazilas",
+          "timeline": "6 months"
+        },
+        {
+          "phase": "Phase 2",
+          "description": "Expand to 20 upazilas with pharmacy integration",
+          "timeline": "12 months"
+        },
+        {
+          "phase": "Phase 3",
+          "description": "Nationwide coverage with AI features",
+          "timeline": "24 months"
+        }
+      ],
+      "budgetEstimate": "Development: ৳25 crore, Annual operation: ৳10 crore",
+      "expectedImpact": [
+        "Provide healthcare access to 50+ million rural citizens",
+        "Reduce unnecessary hospital visits by 40%",
+        "Early detection of diseases through AI screening"
+      ],
+      "teamRequirements": [
+        "Mobile developers (6)",
+        "AI/ML engineers (4)",
+        "Healthcare domain experts (3)",
+        "Community health workers for outreach (100+)"
+      ],
+      "risks": [
+        {
+          "risk": "Internet connectivity in rural areas",
+          "mitigation": "Offline-capable features, low-bandwidth optimization"
+        },
+        {
+          "risk": "Doctor participation",
+          "mitigation": "Incentive programs and flexible scheduling"
+        }
+      ],
+      "createdAt": "2026-01-05",
+      "updatedAt": "2026-01-20"
+    },
+    {
+      "id": "education-platform",
+      "title": "Open Education Platform for Bangladesh",
+      "category": "Education",
+      "status": "New",
+      "author": "EdTech Volunteers",
+      "summary": "A free, open-source educational platform with curriculum-aligned content in Bangla, supporting students from primary to higher secondary levels.",
+      "problemStatement": "Quality education remains inaccessible to millions due to economic constraints, geographic barriers, and shortage of qualified teachers. Private tutoring creates inequality.",
+      "proposedSolution": "Create a Khan Academy-style platform in Bangla with video lessons, interactive exercises, and progress tracking aligned with the national curriculum.",
+      "technicalArchitecture": [
+        "Frontend: Next.js with offline support",
+        "Backend: Python FastAPI",
+        "Content: Video hosting on cost-effective CDN",
+        "Database: MongoDB for flexible content structure",
+        "Mobile: Progressive Web App (PWA)"
+      ],
+      "implementationPhases": [
+        {
+          "phase": "Phase 1",
+          "description": "SSC curriculum content and platform",
+          "timeline": "6 months"
+        },
+        {
+          "phase": "Phase 2",
+          "description": "HSC curriculum and mobile app",
+          "timeline": "12 months"
+        },
+        {
+          "phase": "Phase 3",
+          "description": "Primary education and teacher tools",
+          "timeline": "18 months"
+        }
+      ],
+      "budgetEstimate": "Development: ৳15 crore, Annual content: ৳8 crore",
+      "expectedImpact": [
+        "Free quality education for 10+ million students",
+        "Reduce dependency on private tutoring",
+        "Standardize education quality across regions"
+      ],
+      "teamRequirements": [
+        "Full-stack developers (8)",
+        "Content creators and teachers (20+)",
+        "Video production team (5)",
+        "Curriculum experts (5)"
+      ],
+      "risks": [
+        {
+          "risk": "Content quality consistency",
+          "mitigation": "Peer review system and expert validation"
+        },
+        {
+          "risk": "Device accessibility",
+          "mitigation": "Low-spec device optimization, school computer labs"
+        }
+      ],
+      "createdAt": "2026-01-20",
+      "updatedAt": "2026-01-30"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "transparent-procurement",
+  "title": "Transparent Public Procurement Platform",
+  "category": "Governance",
+  "status": "Active",
+  "author": "Anti-Corruption Coalition",
+  "summary": "An open-source e-procurement system that ensures transparency in government purchases, from tender announcement to contract completion.",
+  "problemStatement": "Public procurement in Bangladesh is plagued by corruption, bid rigging, and lack of transparency. Studies estimate that 10-25% of procurement budgets are lost to corruption annually.",
+  "proposedSolution": "Create an end-to-end digital procurement platform that automates the entire procurement lifecycle with built-in transparency mechanisms, audit trails, and public oversight features.",
+  "technicalArchitecture": [
+    "Backend: Python Django with REST APIs",
+    "Frontend: Vue.js with accessibility features",
+    "Database: PostgreSQL with audit logging",
+    "Security: Multi-factor authentication, encryption",
+    "Analytics: Real-time dashboards and alerts"
+  ],
+  "implementationPhases": [
+    {
+      "phase": "Phase 1",
+      "description": "Core platform development and pilot ministry",
+      "timeline": "8 months"
+    },
+    {
+      "phase": "Phase 2",
+      "description": "Rollout to 10 ministries with training",
+      "timeline": "18 months"
+    },
+    {
+      "phase": "Phase 3",
+      "description": "All government bodies and local governments",
+      "timeline": "36 months"
+    }
+  ],
+  "budgetEstimate": "Development: ৳30 crore, Annual operation: ৳5 crore",
+  "expectedImpact": [
+    "Save ৳5,000+ crore annually from reduced corruption",
+    "Increase SME participation in government contracts",
+    "Improve public trust in government spending"
+  ],
+  "teamRequirements": [
+    "Python developers (8)",
+    "Security specialists (3)",
+    "Domain experts in procurement (2)",
+    "Training coordinators (5)"
+  ],
+  "risks": [
+    {
+      "risk": "User adoption challenges",
+      "mitigation": "Comprehensive training and support"
+    },
+    {
+      "risk": "Integration with legacy systems",
+      "mitigation": "Flexible API architecture"
+    }
+  ],
+  "createdAt": "2026-01-10",
+  "updatedAt": "2026-01-25"
+}

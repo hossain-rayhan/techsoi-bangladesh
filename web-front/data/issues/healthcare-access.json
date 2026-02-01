@@ -1,0 +1,33 @@
+{
+  "id": "healthcare-access",
+  "title": "Limited Healthcare Access in Rural Areas",
+  "category": "Healthcare",
+  "status": "Open",
+  "impact": "100+ million",
+  "summary": "The majority of Bangladesh's population lacks access to quality healthcare due to shortage of doctors, inadequate facilities, and geographic barriers.",
+  "currentSituation": "Bangladesh has approximately 1 doctor per 2,000 people, well below WHO recommendations. Specialist doctors are concentrated in Dhaka and major cities. Rural health centers often lack basic equipment and qualified staff. Patients travel hours to reach quality care.",
+  "affectedGroups": [
+    "Rural population (70% of total)",
+    "Low-income families",
+    "Women and children",
+    "Elderly citizens"
+  ],
+  "consequences": [
+    "High maternal and infant mortality rates",
+    "Preventable deaths from treatable diseases",
+    "Financial burden from travel and treatment costs",
+    "Delayed diagnosis of serious conditions"
+  ],
+  "potentialTechInterventions": [
+    "Telemedicine platforms for remote consultations",
+    "AI-assisted diagnostic tools",
+    "Health worker mobile apps for community health",
+    "Medicine delivery and inventory management systems"
+  ],
+  "relatedResources": [
+    "WHO Bangladesh Health Profile",
+    "Ministry of Health Digital Health Strategy"
+  ],
+  "createdAt": "2026-01-05",
+  "updatedAt": "2026-01-22"
+}

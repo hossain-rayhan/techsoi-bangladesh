@@ -1,0 +1,60 @@
+{
+  "id": "digital-land-registry",
+  "title": "Digital Land Registry System",
+  "category": "Governance",
+  "status": "Under Review",
+  "author": "Tech Community",
+  "summary": "A blockchain-based land registry system to eliminate fraudulent land transactions and provide transparent ownership records across Bangladesh.",
+  "problemStatement": "Land disputes account for over 70% of civil litigation in Bangladesh. Fraudulent documents, multiple ownership claims, and lack of digitized records lead to corruption, violence, and economic losses estimated at billions of taka annually.",
+  "proposedSolution": "Implement a blockchain-based digital land registry that provides immutable records of land ownership, transaction history, and automated verification. The system will integrate with existing government databases and provide public access to verified land records.",
+  "technicalArchitecture": [
+    "Blockchain: Hyperledger Fabric for permissioned ledger",
+    "Backend: Node.js with Express.js",
+    "Frontend: React.js with mobile-responsive design",
+    "Database: PostgreSQL for off-chain data",
+    "Integration: APIs for government systems"
+  ],
+  "implementationPhases": [
+    {
+      "phase": "Phase 1",
+      "description": "Pilot in one district with digitization of existing records",
+      "timeline": "6 months"
+    },
+    {
+      "phase": "Phase 2",
+      "description": "Expand to 5 major districts with public portal",
+      "timeline": "12 months"
+    },
+    {
+      "phase": "Phase 3",
+      "description": "Nationwide rollout with mobile app",
+      "timeline": "24 months"
+    }
+  ],
+  "budgetEstimate": "Initial pilot: ৳50 crore, Full implementation: ৳500 crore",
+  "expectedImpact": [
+    "Reduce land-related litigation by 60%",
+    "Eliminate fraudulent land documents",
+    "Save citizens billions in legal fees",
+    "Increase property tax collection efficiency"
+  ],
+  "teamRequirements": [
+    "Blockchain developers (5)",
+    "Full-stack developers (10)",
+    "UI/UX designers (3)",
+    "Legal experts (2)",
+    "Project managers (2)"
+  ],
+  "risks": [
+    {
+      "risk": "Resistance from vested interests",
+      "mitigation": "Phased rollout with stakeholder engagement"
+    },
+    {
+      "risk": "Data migration challenges",
+      "mitigation": "Dedicated data validation team"
+    }
+  ],
+  "createdAt": "2026-01-15",
+  "updatedAt": "2026-01-28"
+}

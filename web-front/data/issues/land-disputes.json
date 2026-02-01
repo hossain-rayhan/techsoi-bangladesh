@@ -1,0 +1,33 @@
+{
+  "id": "land-disputes",
+  "title": "Rampant Land Disputes and Fraud",
+  "category": "Corruption",
+  "status": "Open",
+  "impact": "Millions",
+  "summary": "Land-related disputes constitute over 70% of civil cases in Bangladesh courts, with fraudulent documents and multiple claims causing widespread injustice.",
+  "currentSituation": "Bangladesh lacks a comprehensive digital land registry. Paper-based records are susceptible to forgery, and the process of verifying land ownership is time-consuming, expensive, and prone to corruption. An estimated 4 million land-related cases are pending in courts.",
+  "affectedGroups": [
+    "Rural landowners",
+    "Urban property buyers",
+    "Agricultural farmers",
+    "Low-income families vulnerable to land grabbing"
+  ],
+  "consequences": [
+    "Billions of taka lost in legal fees annually",
+    "Violence and deaths over land disputes",
+    "Delayed economic development projects",
+    "Erosion of trust in legal system"
+  ],
+  "potentialTechInterventions": [
+    "Blockchain-based land registry",
+    "Digital document verification system",
+    "Online dispute resolution platform",
+    "Mobile app for land record verification"
+  ],
+  "relatedResources": [
+    "World Bank Report on Land Administration in Bangladesh",
+    "Transparency International Bangladesh Land Governance Study"
+  ],
+  "createdAt": "2026-01-08",
+  "updatedAt": "2026-01-25"
+}

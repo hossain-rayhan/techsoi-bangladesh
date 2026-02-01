@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Details - TechSoi Bangladesh</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🇧🇩</span>
+                <div class="logo-text">
+                    <h1>TechSoi Bangladesh</h1>
+                    <span class="logo-bengali">টেকসই বাংলাদেশ</span>
+                </div>
+            </div>
+            <div class="motto">
+                <p class="tagline">Technology for a Better Bangladesh</p>
+                <p class="initiative">A Probasi Bangladesh Foundation Initiative</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content detail-page">
+        <div class="container">
+            <a href="../index.html#issues" class="back-link">
+                <span>←</span> Back to Issues
+            </a>
+
+            <div id="issue-content">
+                <div class="loading">Loading issue details...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🇧🇩</span>
+                    <span>TechSoi Bangladesh</span>
+                </div>
+                <p class="footer-text">
+                    Made with ❤️ by Bangladeshi professionals worldwide
+                </p>
+            </div>
+            <p class="copyright">© 2026 TechSoi Bangladesh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get issue ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const issueId = urlParams.get('id');
+
+        // Load individual issue file (lightweight!)
+        async function loadIssue() {
+            try {
+                // Load only the specific issue file
+                const response = await fetch(`../data/issues/${issueId}.json`);
+                
+                if (!response.ok) {
+                    showNotFound();
+                    return;
+                }
+                
+                const issue = await response.json();
+                renderIssue(issue);
+                document.title = `${issue.title} - TechSoi Bangladesh`;
+            } catch (error) {
+                console.error('Error loading issue:', error);
+                showNotFound();
+            }
+        }
+
+        function renderIssue(issue) {
+            const container = document.getElementById('issue-content');
+            
+            const affectedList = issue.affectedGroups
+                .map(group => `<li>${escapeHtml(group)}</li>`)
+                .join('');
+
+            const consequencesList = issue.consequences
+                .map(c => `<li>${escapeHtml(c)}</li>`)
+                .join('');
+
+            const techList = issue.potentialTechInterventions
+                .map(tech => `<li>${escapeHtml(tech)}</li>`)
+                .join('');
+
+            const resourcesList = issue.relatedResources
+                .map(r => `<li>${escapeHtml(r)}</li>`)
+                .join('');
+
+            container.innerHTML = `
+                <article class="detail-card">
+                    <div class="detail-header">
+                        <h1>${escapeHtml(issue.title)}</h1>
+                        <div class="detail-meta">
+                            <span class="detail-meta-item">
+                                <span>📁</span> ${escapeHtml(issue.category)}
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>📊</span> ${escapeHtml(issue.status)}
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>👥</span> ${escapeHtml(issue.impact)} affected
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>📅</span> Updated: ${formatDate(issue.updatedAt)}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="detail-body">
+                        <section class="detail-section">
+                            <h2>📋 Summary</h2>
+                            <p>${escapeHtml(issue.summary)}</p>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>📊 Current Situation</h2>
+                            <p>${escapeHtml(issue.currentSituation)}</p>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>👥 Who is Affected?</h2>
+                            <ul>${affectedList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>⚠️ Consequences</h2>
+                            <ul>${consequencesList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>💡 Potential Tech Interventions</h2>
+                            <p>These are some technology-based approaches that could help address this issue:</p>
+                            <ul>${techList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>📚 Related Resources</h2>
+                            <ul>${resourcesList}</ul>
+                        </section>
+
+                        <section class="detail-section" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-md); margin-top: var(--spacing-2xl);">
+                            <h2 style="color: var(--primary-green); border: none; padding: 0; margin-bottom: var(--spacing-md);">🚀 Want to Help Solve This?</h2>
+                            <p>If you have ideas or expertise to address this issue, consider submitting a proposal!</p>
+                            <a href="https://github.com/your-repo/techsoi-bangladesh" class="btn btn-primary" style="margin-top: var(--spacing-md); display: inline-flex;" target="_blank">
+                                <span>📝</span> Submit a Proposal
+                            </a>
+                        </section>
+                    </div>
+                </article>
+            `;
+        }
+
+        function showNotFound() {
+            document.getElementById('issue-content').innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <h4>Issue Not Found</h4>
+                    <p>The issue you're looking for doesn't exist or has been removed.</p>
+                    <a href="../index.html" class="btn btn-primary" style="margin-top: 1rem;">← Back to Home</a>
+                </div>
+            `;
+        }
+
+        function showError() {
+            document.getElementById('issue-content').innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">⚠️</div>
+                    <h4>Error Loading Issue</h4>
+                    <p>Something went wrong. Please try again later.</p>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        // Initialize
+        loadIssue();
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Details - TechSoi Bangladesh</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🇧🇩</span>
+                <div class="logo-text">
+                    <h1>TechSoi Bangladesh</h1>
+                    <span class="logo-bengali">টেকসই বাংলাদেশ</span>
+                </div>
+            </div>
+            <div class="motto">
+                <p class="tagline">Technology for a Better Bangladesh</p>
+                <p class="initiative">A Probasi Bangladesh Foundation Initiative</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content detail-page">
+        <div class="container">
+            <a href="../index.html" class="back-link">
+                <span>←</span> Back to Proposals
+            </a>
+
+            <div id="proposal-content">
+                <div class="loading">Loading proposal details...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🇧🇩</span>
+                    <span>TechSoi Bangladesh</span>
+                </div>
+                <p class="footer-text">
+                    Made with ❤️ by Bangladeshi professionals worldwide
+                </p>
+            </div>
+            <p class="copyright">© 2026 TechSoi Bangladesh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get proposal ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const proposalId = urlParams.get('id');
+
+        // Load individual proposal file (lightweight!)
+        async function loadProposal() {
+            try {
+                // Load only the specific proposal file
+                const response = await fetch(`../data/proposals/${proposalId}.json`);
+                
+                if (!response.ok) {
+                    showNotFound();
+                    return;
+                }
+                
+                const proposal = await response.json();
+                renderProposal(proposal);
+                document.title = `${proposal.title} - TechSoi Bangladesh`;
+            } catch (error) {
+                console.error('Error loading proposal:', error);
+                showNotFound();
+            }
+        }
+
+        function renderProposal(proposal) {
+            const container = document.getElementById('proposal-content');
+            
+            const techList = proposal.technicalArchitecture
+                .map(tech => `<li>${escapeHtml(tech)}</li>`)
+                .join('');
+
+            const phasesRows = proposal.implementationPhases
+                .map(phase => `
+                    <tr>
+                        <td><strong>${escapeHtml(phase.phase)}</strong></td>
+                        <td>${escapeHtml(phase.description)}</td>
+                        <td>${escapeHtml(phase.timeline)}</td>
+                    </tr>
+                `).join('');
+
+            const impactList = proposal.expectedImpact
+                .map(impact => `<li>${escapeHtml(impact)}</li>`)
+                .join('');
+
+            const teamList = proposal.teamRequirements
+                .map(req => `<li>${escapeHtml(req)}</li>`)
+                .join('');
+
+            const risksRows = proposal.risks
+                .map(r => `
+                    <tr>
+                        <td>${escapeHtml(r.risk)}</td>
+                        <td>${escapeHtml(r.mitigation)}</td>
+                    </tr>
+                `).join('');
+
+            container.innerHTML = `
+                <article class="detail-card">
+                    <div class="detail-header">
+                        <h1>${escapeHtml(proposal.title)}</h1>
+                        <div class="detail-meta">
+                            <span class="detail-meta-item">
+                                <span>📁</span> ${escapeHtml(proposal.category)}
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>📊</span> ${escapeHtml(proposal.status)}
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>👤</span> ${escapeHtml(proposal.author)}
+                            </span>
+                            <span class="detail-meta-item">
+                                <span>📅</span> Updated: ${formatDate(proposal.updatedAt)}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="detail-body">
+                        <section class="detail-section">
+                            <h2>📋 Problem Statement</h2>
+                            <p>${escapeHtml(proposal.problemStatement)}</p>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>💡 Proposed Solution</h2>
+                            <p>${escapeHtml(proposal.proposedSolution)}</p>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>🔧 Technical Architecture</h2>
+                            <ul>${techList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>📅 Implementation Plan</h2>
+                            <table class="detail-table">
+                                <thead>
+                                    <tr>
+                                        <th>Phase</th>
+                                        <th>Description</th>
+                                        <th>Timeline</th>
+                                    </tr>
+                                </thead>
+                                <tbody>${phasesRows}</tbody>
+                            </table>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>💰 Budget Estimate</h2>
+                            <p>${escapeHtml(proposal.budgetEstimate)}</p>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>🎯 Expected Impact</h2>
+                            <ul>${impactList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>👥 Team Requirements</h2>
+                            <ul>${teamList}</ul>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>⚠️ Risks & Mitigation</h2>
+                            <table class="detail-table">
+                                <thead>
+                                    <tr>
+                                        <th>Risk</th>
+                                        <th>Mitigation Strategy</th>
+                                    </tr>
+                                </thead>
+                                <tbody>${risksRows}</tbody>
+                            </table>
+                        </section>
+                    </div>
+                </article>
+            `;
+        }
+
+        function showNotFound() {
+            document.getElementById('proposal-content').innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <h4>Proposal Not Found</h4>
+                    <p>The proposal you're looking for doesn't exist or has been removed.</p>
+                    <a href="../index.html" class="btn btn-primary" style="margin-top: 1rem;">← Back to Home</a>
+                </div>
+            `;
+        }
+
+        function showError() {
+            document.getElementById('proposal-content').innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">⚠️</div>
+                    <h4>Error Loading Proposal</h4>
+                    <p>Something went wrong. Please try again later.</p>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        // Initialize
+        loadProposal();
+    </script>
+</body>
+</html>

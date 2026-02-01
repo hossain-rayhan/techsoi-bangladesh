@@ -1,0 +1,34 @@
+{
+  "id": "traffic-congestion",
+  "title": "Severe Traffic Congestion in Dhaka",
+  "category": "Infrastructure",
+  "status": "Open",
+  "impact": "20+ million",
+  "summary": "Dhaka is one of the world's most congested cities, with traffic jams causing massive economic losses and reduced quality of life.",
+  "currentSituation": "Average traffic speed in Dhaka has dropped to 7 km/hour during peak times. Citizens spend 3-4 hours daily in traffic. Economic losses estimated at ৳37,000 crore annually. Lack of integrated public transport, poor traffic management, and rapid urbanization compound the problem.",
+  "affectedGroups": [
+    "Daily commuters",
+    "Business owners",
+    "Emergency services",
+    "All Dhaka residents"
+  ],
+  "consequences": [
+    "Lost productivity worth billions annually",
+    "Increased air pollution and health issues",
+    "Delayed emergency response times",
+    "Mental health impact and stress"
+  ],
+  "potentialTechInterventions": [
+    "Smart traffic management systems",
+    "Real-time traffic information apps",
+    "Integrated public transport ticketing",
+    "Ride-sharing optimization platforms",
+    "Data-driven urban planning tools"
+  ],
+  "relatedResources": [
+    "World Bank Dhaka Urban Transport Study",
+    "BUET Traffic Research Reports"
+  ],
+  "createdAt": "2026-01-12",
+  "updatedAt": "2026-01-26"
+}
